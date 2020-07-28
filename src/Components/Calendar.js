@@ -38,7 +38,7 @@ export default class Calendar extends Component {
 	}
 
 	render() {
-		const { currentDate, today, selectionDate } = this.state
+		const { currentDate, today, selectionDate, weeksDisplay } = this.state
 		const { onChange = () => null } = this.props
 
 		return (
@@ -51,6 +51,12 @@ export default class Calendar extends Component {
 					<button type='button' onClick={() => this.setState({ currentDate: currentDate.add(1, 'month') })}>
 						<IconArrowRight />
 					</button>
+				</div>
+
+				<div className='calendar-weeks'>
+					{weeksDisplay.map((week) => (
+						<div>{week}</div>
+					))}
 				</div>
 
 				<div className='calendar-dates'>
