@@ -31,7 +31,7 @@ export default class Calendar extends Component {
 	}
 
 	render() {
-		const { whichMonthDisplay, today, selectedDate, weeksDisplay } = this.state
+		const { whichMonthDisplay, weeksDisplay } = this.state
 		const { onChange = () => null } = this.props
 
 		return (
