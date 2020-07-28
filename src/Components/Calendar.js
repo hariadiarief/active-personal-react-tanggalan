@@ -10,7 +10,7 @@ export default class Calendar extends Component {
 		this.state = {
 			weeksDisplay: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fa', 'Sa'],
 			today: moment(),
-			whichMonthDisplay: moment(this.props.selectedDate),
+			whichMonthDisplay: this.props.selectedDate ? moment(this.props.selectedDate) : moment(),
 			selectedDate: moment(this.props.selectedDate) || moment(),
 		}
 	}
