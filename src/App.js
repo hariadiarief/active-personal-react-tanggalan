@@ -1,16 +1,16 @@
 import React from 'react'
-import Calendar from './Components/Calendar'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-function App() {
-	return (
-		<div className='container home'>
-			<h1>Responsive Calendar Component</h1>
-			<div></div>
-			<div className='card home__card'>
-				<Calendar onChange={(date) => alert(date)} />
-			</div>
-		</div>
-	)
+import Home from './Pages/Home'
+
+export default class App extends React.Component {
+	render() {
+		return (
+			<Router>
+				<Switch>
+					<Route path='/' component={Home} />
+				</Switch>
+			</Router>
+		)
+	}
 }
-
-export default App
