@@ -24,6 +24,14 @@
     }
 }
 
+.calendar-weeks {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(14.28% - 12px), 1fr));
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
 .calendar-dates {
     width: 100%;
     display: grid;
