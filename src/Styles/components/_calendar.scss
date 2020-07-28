@@ -1,0 +1,26 @@
+.calendar {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(14.28% - 25px), 1fr));
+    grid-gap: 5px;
+}
+
+.calendar-dates--focus {
+    color: red;
+}
+
+.calendar-dates--infocus {
+    color: pink;
+}
+
+.calendar-dates--today {
+    color: green;
+}
+
+.calendar-dates--selected {
+    color: brown;
+}
