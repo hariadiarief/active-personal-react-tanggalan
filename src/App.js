@@ -1,14 +1,18 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-import Home from './Pages/Home'
+import { publicRoutes } from './Routes'
+import NotFound from './Pages/404'
 
 export default class App extends React.Component {
 	render() {
 		return (
 			<Router>
 				<Switch>
-					<Route path='/' component={Home} />
+					{publicRoutes.map((route, index) => (
+						<Route exact path={route.route} component={route.component} key={index} />
+					))}
+					<Route exact component={NotFound} key='404' />
 				</Switch>
 			</Router>
 		)
