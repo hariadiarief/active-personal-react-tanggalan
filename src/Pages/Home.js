@@ -1,9 +1,9 @@
 import React from 'react'
 import queryString from 'query-string'
 
-import Calendar from '../Components/Calendar'
+import Calendar from 'Components/Calendar'
 
-const Home = ({ history, location }) => {
+export default function Home({ history, location }) {
 	const { date = null } = queryString.parse(location.search)
 	return (
 		<section className='home'>
@@ -27,5 +27,3 @@ const Home = ({ history, location }) => {
 		</section>
 	)
 }
-
-export default Home
