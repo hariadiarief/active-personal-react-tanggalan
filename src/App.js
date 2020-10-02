@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import { publicRoutes } from './Routes'
-import NotFound from './Pages/404'
+import NotFound from './Screens/404'
 
 export default class App extends React.Component {
 	render() {
