@@ -6,10 +6,12 @@ import Calendar from '../Components/Calendar'
 const Home = ({ history, location }) => {
 	const { date = null } = queryString.parse(location.search)
 	return (
-		<div className='container home'>
-			<h1>Responsive Calendar Component</h1>
-			<div></div>
-			<div className='card home__card'>
+		<section className='home'>
+			<header className='home__header'>
+				<h3>Responsive Calendar Component</h3>
+			</header>
+
+			<main className='container card home__main'>
 				<Calendar
 					onChange={(date) =>
 						history.push({
@@ -19,8 +21,10 @@ const Home = ({ history, location }) => {
 					}
 					selectedDate={date}
 				/>
-			</div>
-		</div>
+			</main>
+
+			<footer className='home__footer'>© Masagus Hariadi Arief 2020 all rights reserved</footer>
+		</section>
 	)
 }
 
