@@ -1,4 +1,4 @@
-import Home from 'Pages/Home'
+import Home from 'Screens/Home'
 
 export const publicRoutes = [
 	{
