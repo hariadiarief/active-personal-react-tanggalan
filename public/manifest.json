@@ -1,53 +1,21 @@
 {
-   "name": "Next.JS Progressive Web App",
-   "short_name": "Next PWA",
-   "theme_color": "#ffffff",
-   "background_color": "#004740",
-   "display": "fullscreen",
-   "orientation": "portrait",
-   "scope": "/",
-   "start_url": "/",
-   "icons": [
-     {
-       "src": "icons/calendar.png",
-       "sizes": "72x72",
-       "type": "image/png"
-     },
-     {
-       "src": "icons/calendar.png",
-       "sizes": "96x96",
-       "type": "image/png"
-     },
-     {
-       "src": "icons/calendar.png",
-       "sizes": "128x128",
-       "type": "image/png"
-     },
-     {
-       "src": "icons/calendar.png",
-       "sizes": "144x144",
-       "type": "image/png"
-     },
-     {
-       "src": "icons/calendar.png",
-       "sizes": "152x152",
-       "type": "image/png"
-     },
-     {
-       "src": "icons/calendar.png",
-       "sizes": "192x192",
-       "type": "image/png"
-     },
-     {
-       "src": "icons/calendar.png",
-       "sizes": "384x384",
-       "type": "image/png"
-     },
-     {
-       "src": "icons/calendar.png",
-       "sizes": "512x512",
-       "type": "image/png"
-     }
-   ],
-   "splash_pages": null
- }
+  "name": "next-pwa",
+  "short_name": "next-pwa",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/icons/calendar.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/calendar.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
