@@ -1,8 +1,11 @@
 {
 	"compilerOptions": {
-		"target": "esnext",
-		"baseUrl": "src",
-		"jsx": "react"
-	},
-	"include": ["**/*.png", "**/*.svg"]
-}
+	  "baseUrl": ".",
+	  "paths": {
+		"@assets/*": ["src/assets/*"],
+		"@components/*": ["src/components/*"],
+		"@pages/*": ["src/pages/*"],
+		"@styles/*": ["src/styles/*"],
+	  },
+	}
+  }

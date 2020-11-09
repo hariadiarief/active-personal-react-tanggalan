@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
 import moment from 'moment'
 
-import { ReactComponent as IconArrowLeft } from 'Assets/Icons/keyboard_arrow_left.svg'
-import { ReactComponent as IconArrowRight } from 'Assets/Icons/keyboard_arrow_right.svg'
+import IconArrowLeft from '../assets/icons/keyboard_arrow_left.svg'
+import IconArrowRight from '../assets/icons/keyboard_arrow_right.svg'
 
 export default function Calendar(props) {
 	const weeksDisplay = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fa', 'Sa']
 	const today = moment()
 
-	const [selectedDate, setSelectedDate] = useState(moment(props.selectedDate) ?? moment())
+	const [selectedDate, setSelectedDate] = useState(moment(props?.selectedDate) ?? moment())
 	const [whichMonthDisplay, setWhichMonthDisplay] = useState(
-		props.selectedDate ? moment(props.selectedDate) : moment()
+		props?.selectedDate ? moment(props?.selectedDate) : moment()
 	)
 
 	const determineDateClass = (date) => {
@@ -40,8 +40,8 @@ export default function Calendar(props) {
 			</div>
 
 			<div className='calendar-weeks'>
-				{weeksDisplay.map((week) => (
-					<div>{week}</div>
+				{weeksDisplay.map((week, index) => (
+					<div key={index}>{week}</div>
 				))}
 			</div>
 
@@ -54,7 +54,7 @@ export default function Calendar(props) {
 								className={determineDateClass(date)}
 								onClick={() => {
 									setSelectedDate(date.clone())
-									props.onChange(date.format('YYYY-MM-DD'))
+									props?.onChange ? props.onChange(date.format('YYYY-MM-DD')) : null
 								}}>
 								{date.format('D')}
 							</span>
