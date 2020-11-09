@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Calendar from './components/Calendar'
 import Router, { useRouter } from 'next/router'
+import Calendar from '@components/calendar'
 
 export default function Home({ dateProps }) {
 	const router = useRouter()

@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import moment from 'moment'
 
-import IconArrowLeft from '../../assets/icons/keyboard_arrow_left.svg'
-import IconArrowRight from '../../assets/icons/keyboard_arrow_right.svg'
+import IconArrowLeft from '../assets/icons/keyboard_arrow_left.svg'
+import IconArrowRight from '../assets/icons/keyboard_arrow_right.svg'
 
 export default function Calendar(props) {
 	const weeksDisplay = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fa', 'Sa']
