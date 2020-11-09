@@ -40,8 +40,8 @@ export default function Calendar(props) {
 			</div>
 
 			<div className='calendar-weeks'>
-				{weeksDisplay.map((week) => (
-					<div>{week}</div>
+				{weeksDisplay.map((week, index) => (
+					<div key={index}>{week}</div>
 				))}
 			</div>
 
