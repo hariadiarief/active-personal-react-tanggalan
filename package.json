@@ -1,7 +1,11 @@
 {
   "name": "react-calendar",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "description": "Tanggalan Aplication built with Next.JS",
+  "author": {
+    "name": "Masagus Hariadi Arief"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
