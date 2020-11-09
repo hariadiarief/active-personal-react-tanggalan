@@ -1,10 +1,10 @@
 const withPWA = require('next-pwa')
-const withCSS = require('@zeit/next-css')
 
-module.exports = withPWA(
-	withCSS({
-		pwa: {
-			dest: 'public',
-		},
-	})
-)
+module.exports = withPWA({
+	pwa: {
+		disable: process.env.NODE_ENV === 'development',
+		register: true,
+		scope: '/app',
+		sw: 'service-worker.js',
+	},
+})
