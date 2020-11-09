@@ -1,34 +1,60 @@
 import Head from 'next/head'
 
-const defaultTitle = 'tanngalan'
-const defaultKeyword = 'iyansr, iyan saputra, programmer, react native developer, jasa programmer'
-
-const Meta = ({ title = defaultTitle, description, keywords = defaultKeyword }) => {
+const Meta = () => {
 	return (
 		<Head>
-			<title>{title} | tanngalan</title>
-			<meta name='title' content={title} />
-			<meta name='description' content={description} />
+			{/* Must */}
+			<meta charset='utf-8' />
+			<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+			<meta
+				name='viewport'
+				content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no'
+			/>
+			<meta name='description' content='Description' />
+			<meta name='keywords' content='Keywords' />
+			<title>Page Title</title>
 
-			<meta property='og:type' content='website' />
-			<meta property='og:url' content={url} />
-			<meta property='og:title' content={title} />
-			<meta property='og:description' content={description} />
-			<meta property='og:image' content={image} />
+			{/* Android  */}
+			<meta name='theme-color' content='red' />
+			<meta name='mobile-web-app-capable' content='yes' />
 
-			<meta property='twitter:card' content='summary_large_image' />
-			<meta property='twitter:url' content={url} />
-			<meta property='twitter:title' content={title} />
-			<meta property='twitter:description' content={description} />
-			<meta property='twitter:image' content={image} />
-			<meta name='p:domain_verify' content='1c45cd484910f8887fdf4c4fe4332510' />
+			{/* iOS */}
+			<meta name='apple-mobile-web-app-title' content='Application Title' />
+			<meta name='apple-mobile-web-app-capable' content='yes' />
+			<meta name='apple-mobile-web-app-status-bar-style' content='default' />
 
-			<meta name='keywords' content={keywords} />
-			<meta name='robots' content='index, follow' />
-			<meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
-			<meta name='language' content='English' />
-			<meta name='revisit-after' content='7 days' />
-			<meta name='author' content='Iyan Saputra' />
+			{/* Windows  */}
+			<meta name='msapplication-navbutton-color' content='red' />
+			<meta name='msapplication-TileColor' content='red' />
+			<meta name='msapplication-TileImage' content='ms-icon-144x144.png' />
+			<meta name='msapplication-config' content='browserconfig.xml' />
+
+			{/* Pinned Sites  */}
+			<meta name='application-name' content='Application Name' />
+			<meta name='msapplication-tooltip' content='Tooltip Text' />
+			<meta name='msapplication-starturl' content='/' />
+
+			{/* Tap highlighting  */}
+			<meta name='msapplication-tap-highlight' content='no' />
+
+			{/* UC Mobile Browser  */}
+			<meta name='full-screen' content='yes' />
+			<meta name='browsermode' content='application' />
+
+			{/* Disable night mode for this page  */}
+			<meta name='nightmode' content='enable/disable' />
+
+			{/* Fitscreen  */}
+			<meta name='viewport' content='uc-fitscreen=yes' />
+
+			{/* Layout mode */}
+			<meta name='layoutmode' content='fitscreen/standard' />
+
+			{/* imagemode - show image even in text only mode  */}
+			<meta name='imagemode' content='force' />
+
+			{/* Orientation  */}
+			<meta name='screen-orientation' content='portrait' />
 		</Head>
 	)
 }
