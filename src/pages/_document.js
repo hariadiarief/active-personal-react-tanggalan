@@ -1,7 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
-const APP_NAME = 'next-pwa example'
-const APP_DESCRIPTION = 'This is an example of using next-pwa plugin'
+const APP_NAME = 'Tanggalan'
+const APP_DESCRIPTION = 'Aplikasi Kalender'
 
 export default class extends Document {
 	static async getInitialProps(ctx) {
@@ -19,7 +19,7 @@ export default class extends Document {
 					<meta name='description' content={APP_DESCRIPTION} />
 					<meta name='format-detection' content='telephone=no' />
 					<meta name='mobile-web-app-capable' content='yes' />
-					<meta name='theme-color' content='#00bcff' />
+					<meta name='theme-color' content='#828282' />
 					{/* TIP: set viewport head meta tag in _app.js, otherwise it will show a warning */}
 					{/* <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover' /> */}
 

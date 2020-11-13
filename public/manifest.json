@@ -5,7 +5,7 @@
 	"description": "Aplikasi untuk Melihat Tanggal",
 	"start_url": "https://adi-react-calendar.netlify.app/",
 	"background_color": "#ffffff",
-	"theme_color": "#00bcff",
+	"theme_color": "#828282",
 	"dir": "ltr",
 	"display": "standalone",
 	"orientation": "any",
