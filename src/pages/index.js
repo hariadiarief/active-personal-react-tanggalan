@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Router, { useRouter } from 'next/router'
 import Calendar from '@components/calendar'
+import Meta from '@components/meta'
 
 export default function Home({ dateProps }) {
 	const router = useRouter()
@@ -8,10 +9,7 @@ export default function Home({ dateProps }) {
 
 	return (
 		<div>
-			<Head>
-				<title>Tanggalan</title>
-				<link rel='icon' href='/favicon.ico' />
-			</Head>
+			<Meta />
 
 			<main className='home'>
 				<header className='home__header'>
