@@ -1,18 +1,12 @@
 import Head from 'next/head'
 
-const defaultTitle = 'Watasapan'
+const defaultTitle = 'Tanggalan'
 const defaultThumbnail =
-	'https://images.unsplash.com/photo-1599382103240-5f2a57137d28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80'
+	'https://images.unsplash.com/photo-1591174425156-fd472f354be4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80'
 const defaultURL = 'https://watsapan.netlify.app/'
-const defaultKeyword = 'iyansr, iyan saputra, programmer, react native developer, jasa programmer'
+const defaultKeyword = 'kalender, calendar, tangggalan'
 
-const Meta = ({
-	title = defaultTitle,
-	description,
-	url = defaultURL,
-	image = defaultThumbnail,
-	keywords = defaultKeyword,
-}) => {
+const Meta = ({ title = '', description, url = defaultURL, image = defaultThumbnail, keywords = defaultKeyword }) => {
 	return (
 		<Head>
 			<title>{title ? `${title} | ${defaultTitle}` : defaultTitle}</title>
