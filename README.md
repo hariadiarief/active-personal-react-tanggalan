@@ -11,6 +11,7 @@
 ## Getting Started
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 First, run the development server:
 
@@ -33,8 +34,10 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deployment Status
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This App has been deployed on Netlify
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d2d562e1-0847-4076-b384-328ed720ba66/deploy-status)](https://app.netlify.com/sites/tanggalan/deploys)
+
+
