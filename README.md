@@ -1,3 +1,14 @@
+## Feature or Technology
+
+- [x] Display date
+- [x] Responive Web Display
+- [x] Progressive Web App
+- [x] Server Side Rendering with NextJs
+- [ ] Show National Holiday
+- [ ] SSO Google
+- [ ] Add Event to Calendar
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
